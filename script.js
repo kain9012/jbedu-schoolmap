@@ -1179,7 +1179,7 @@ function getContent(data) {
   <div class="infowindow">
     <div class="info-head">
         <h3 class="infowindow-title">${data.title}</h3>
-        <div class="close" onclick="closeOverlay()" title="닫기"></div>'
+        <div class="close" onclick="closeOverlay()" title="닫기"></div>
     </div>
     <div class="info-left">
         <div class="info1">
