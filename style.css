@@ -25,6 +25,7 @@ body{
   height: 100vh; 
   background: #0d0055;
   font-size: 0.8rem;
+  overflow:auto;
 }
 
 #main {
@@ -117,8 +118,6 @@ body{
 
 
 
-
-
 table{
   font-family: 'SUITE-Regular';
   font-size: 0.8rem;
@@ -129,5 +128,4 @@ table{
   background: white;
   z-index: 1;
 }
-
 

@@ -1446,31 +1446,37 @@ function Checkevent() {
   let num1 = 0;
   let num2 = 0;
   let num3 = 0;
+  let num3_1 = 0;
   let num4 = 0;
   let num5 = 0;
   let num6 = 0;
   let num7 = 0;
   let num8 = 0;
+  let num8_1 = 0;
   let num9 = 0;
   let num10 = 0;
   let num11 = 0;
   let num12 = 0;
   let num13 = 0;
+  let num13_1 = 0;
   let num14 = 0;
   let num15 = 0;
   let num16 = 0;
   let num17 = 0;
   let num18 = 0;
+  let num18_1 = 0;
   let num19 = 0;
   let num20 = 0;
   let num21 = 0;
   let num22 = 0;
   let num23 = 0;
+  let num23_1 = 0;
   let num24 = 0;
   let num25 = 0;
   let num26 = 0;
   let num27 = 0;
   let num28 = 0;
+  let num28_1 = 0;
   let num29 = 0;
   let num30 = 0;
 
@@ -1480,36 +1486,42 @@ function Checkevent() {
     if (categorizedDataSet[i].category1 === "유" && categorizedDataSet[i].category2 === "국립" ) {num1 += parseInt(categorizedDataSet[i].category18)};
     if (categorizedDataSet[i].category1 === "유" && categorizedDataSet[i].category2 === "공립" ) {num2 += parseInt(categorizedDataSet[i].category18)};
     if (categorizedDataSet[i].category1 === "유" && categorizedDataSet[i].category2 === "사립" ) {num3 += parseInt(categorizedDataSet[i].category18)};
+    if (categorizedDataSet[i].category1 === "유") {num3_1 += parseInt(categorizedDataSet[i].category18)};
     if (categorizedDataSet[i].category1 === "유") {num4 += parseInt(categorizedDataSet[i].category14)};
     if (categorizedDataSet[i].category1 === "유") {num5 += parseInt(categorizedDataSet[i].category16)};
 
     if (categorizedDataSet[i].category1 === "초" && categorizedDataSet[i].category2 === "국립" ) {num6 += parseInt(categorizedDataSet[i].category18)};
     if (categorizedDataSet[i].category1 === "초" && categorizedDataSet[i].category2 === "공립" ) {num7 += parseInt(categorizedDataSet[i].category18)};
     if (categorizedDataSet[i].category1 === "초" && categorizedDataSet[i].category2 === "사립" ) {num8 += parseInt(categorizedDataSet[i].category18)};
+    if (categorizedDataSet[i].category1 === "초") {num8_1 += parseInt(categorizedDataSet[i].category18)};
     if (categorizedDataSet[i].category1 === "초") {num9 += parseInt(categorizedDataSet[i].category14)};
     if (categorizedDataSet[i].category1 === "초") {num10 += parseInt(categorizedDataSet[i].category16)};
 
     if (categorizedDataSet[i].category1 === "중" && categorizedDataSet[i].category2 === "국립" ) {num11 += parseInt(categorizedDataSet[i].category18)};
     if (categorizedDataSet[i].category1 === "중" && categorizedDataSet[i].category2 === "공립" ) {num12 += parseInt(categorizedDataSet[i].category18)};
     if (categorizedDataSet[i].category1 === "중" && categorizedDataSet[i].category2 === "사립" ) {num13 += parseInt(categorizedDataSet[i].category18)};
+    if (categorizedDataSet[i].category1 === "중") {num13_1 += parseInt(categorizedDataSet[i].category18)};
     if (categorizedDataSet[i].category1 === "중") {num14 += parseInt(categorizedDataSet[i].category14)};
     if (categorizedDataSet[i].category1 === "중") {num15 += parseInt(categorizedDataSet[i].category16)};
 
     if (categorizedDataSet[i].category1 === "고" && categorizedDataSet[i].category2 === "국립" ) {num16 += parseInt(categorizedDataSet[i].category18)};
     if (categorizedDataSet[i].category1 === "고" && categorizedDataSet[i].category2 === "공립" ) {num17 += parseInt(categorizedDataSet[i].category18)};
     if (categorizedDataSet[i].category1 === "고" && categorizedDataSet[i].category2 === "사립" ) {num18 += parseInt(categorizedDataSet[i].category18)};
+    if (categorizedDataSet[i].category1 === "고") {num18_1 += parseInt(categorizedDataSet[i].category18)};
     if (categorizedDataSet[i].category1 === "고") {num19 += parseInt(categorizedDataSet[i].category14)};
     if (categorizedDataSet[i].category1 === "고") {num20 += parseInt(categorizedDataSet[i].category16)};
     
     if (categorizedDataSet[i].category1 === "특수" && categorizedDataSet[i].category2 === "국립" ) {num21 += parseInt(categorizedDataSet[i].category18)};
     if (categorizedDataSet[i].category1 === "특수" && categorizedDataSet[i].category2 === "공립" ) {num22 += parseInt(categorizedDataSet[i].category18)};
     if (categorizedDataSet[i].category1 === "특수" && categorizedDataSet[i].category2 === "사립" ) {num23 += parseInt(categorizedDataSet[i].category18)};
+    if (categorizedDataSet[i].category1 === "특수") {num23_1 += parseInt(categorizedDataSet[i].category18)};
     if (categorizedDataSet[i].category1 === "특수") {num24 += parseInt(categorizedDataSet[i].category14)};
     if (categorizedDataSet[i].category1 === "특수") {num25 += parseInt(categorizedDataSet[i].category16)};
   
     if (categorizedDataSet[i].category2 === "국립" ) {num26 += parseInt(categorizedDataSet[i].category18)};
     if (categorizedDataSet[i].category2 === "공립" ) {num27 += parseInt(categorizedDataSet[i].category18)};
     if (categorizedDataSet[i].category2 === "사립" ) {num28 += parseInt(categorizedDataSet[i].category18)};
+    num28_1 += parseInt(categorizedDataSet[i].category18);
     num29 += parseInt(categorizedDataSet[i].category14);
     num30 += parseInt(categorizedDataSet[i].category16);
   
@@ -1520,36 +1532,42 @@ function Checkevent() {
   document.getElementById('num1').innerText = num1;
   document.getElementById('num2').innerText = num2;
   document.getElementById('num3').innerText = num3;
+  document.getElementById('num3_1').innerText = num3_1;
   document.getElementById('num4').innerText = num4;
   document.getElementById('num5').innerText = num5;
 
   document.getElementById('num6').innerText = num6;
   document.getElementById('num7').innerText = num7;
   document.getElementById('num8').innerText = num8;
+  document.getElementById('num8_1').innerText = num8_1;
   document.getElementById('num9').innerText = num9;
   document.getElementById('num10').innerText = num10;
 
   document.getElementById('num11').innerText = num11;
   document.getElementById('num12').innerText = num12;
   document.getElementById('num13').innerText = num13;
+  document.getElementById('num13_1').innerText = num13_1;
   document.getElementById('num14').innerText = num14;
   document.getElementById('num15').innerText = num15;
 
   document.getElementById('num16').innerText = num16;
   document.getElementById('num17').innerText = num17;
   document.getElementById('num18').innerText = num18;
+  document.getElementById('num18_1').innerText = num18_1;
   document.getElementById('num19').innerText = num19;
   document.getElementById('num20').innerText = num20;
 
   document.getElementById('num21').innerText = num21;
   document.getElementById('num22').innerText = num22;
   document.getElementById('num23').innerText = num23;
+  document.getElementById('num23_1').innerText = num23_1;
   document.getElementById('num24').innerText = num24;
   document.getElementById('num25').innerText = num25;
 
   document.getElementById('num26').innerText = num26;
   document.getElementById('num27').innerText = num27;
   document.getElementById('num28').innerText = num28;
+  document.getElementById('num28_1').innerText = num28_1;
   document.getElementById('num29').innerText = num29;
   document.getElementById('num30').innerText = num30;
 
@@ -1570,4 +1588,5 @@ function closeMarker() {
 
 
 setMap(dataSet);
+
 
