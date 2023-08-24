@@ -2,146 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>전라북도 학교 현황 지도(2023.4.1.기준)</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div id="wrap">
-        <div id="side">
-            <section id="category">
-                <div class="inner">
-                    <div class="category-container">
-                        <div class="category-list">
-                            <form>
-                                <fieldset>
-                                    <legend>학교급</legend>
-                                    <label>전체<input type="checkbox" id="all_1" name="학교급" value="전체" onclick="selectAll_1(this)" checked/></label>
-                                    <label>유<input type="checkbox" id="유" name="학교급" value="유" onclick="Checkevent()" checked/></label>
-                                    <label>초<input type="checkbox" id="초" name="학교급" value="초" onclick="Checkevent()" checked/></label>
-                                    <label>중<input type="checkbox" id="중" name="학교급" value="중" onclick="Checkevent()" checked/></label>
-                                    <label>고<input type="checkbox" id="고" name="학교급" value="고" onclick="Checkevent()" checked/></label>
-                                    <label>특수<input type="checkbox" id="특수" name="학교급" value="특수" onclick="Checkevent()" checked/></label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>설립</legend>
-                                    <label>전체<input type="checkbox" id="all_2" name="설립" value="전체" onclick="selectAll_2(this)" checked/></label>
-                                    <label>국립<input type="checkbox" id="국립" name="설립" value="국립" onclick="Checkevent()" checked/></label>
-                                    <label>공립<input type="checkbox" id="공립" name="설립" value="공립" onclick="Checkevent()" checked/></label>
-                                    <label>사립<input type="checkbox" id="사립" name="설립" value="사립" onclick="Checkevent()" checked/></label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>지역</legend>
-                                    <label>전체<input type="checkbox" id="all_3" name="지역" value="전체" onclick="selectAll_3(this)" checked/></label>
-                                    <label>전주<input type="checkbox" id="전주" name="지역" value="전주" onclick="Checkevent()" checked/></label>
-                                    <label>군산<input type="checkbox" id="군산" name="지역" value="군산" onclick="Checkevent()" checked/></label>
-                                    <label>익산<input type="checkbox" id="익산" name="지역" value="익산" onclick="Checkevent()" checked/></label>
-                                    <label>정읍<input type="checkbox" id="정읍" name="지역" value="정읍" onclick="Checkevent()" checked/></label>
-                                    <br><label>남원<input type="checkbox" id="남원" name="지역" value="남원" onclick="Checkevent()" checked/></label>
-                                    <label>김제<input type="checkbox" id="김제" name="지역" value="김제" onclick="Checkevent()" checked/></label>
-                                    <label>완주<input type="checkbox" id="완주" name="지역" value="완주" onclick="Checkevent()" checked/></label>
-                                    <label>진안<input type="checkbox" id="진안" name="지역" value="진안" onclick="Checkevent()" checked/></label>
-                                    <label>무주<input type="checkbox" id="무주" name="지역" value="무주" onclick="Checkevent()" checked/></label>
-                                    <br><label>장수<input type="checkbox" id="장수" name="지역" value="장수" onclick="Checkevent()" checked/></label>
-                                    <label>임실<input type="checkbox" id="임실" name="지역" value="임실" onclick="Checkevent()" checked/></label>
-                                    <label>순창<input type="checkbox" id="순창" name="지역" value="순창" onclick="Checkevent()" checked/></label>
-                                    <label>고창<input type="checkbox" id="고창" name="지역" value="고창" onclick="Checkevent()" checked/></label>
-                                    <label>부안<input type="checkbox" id="부안" name="지역" value="부안" onclick="Checkevent()" checked/></label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>급지</legend>
-                                    <label>전체<input type="checkbox" id="all_4" name="급지" value="전체" onclick="selectAll_4(this)" checked/></label>
-                                    <label>시<input type="checkbox" id="시" name="급지" value="시" onclick="Checkevent()" checked/></label>
-                                    <label>읍<input type="checkbox" id="읍" name="급지" value="읍" onclick="Checkevent()" checked/></label>
-                                    <label>면<input type="checkbox" id="면" name="급지" value="면" onclick="Checkevent()" checked/></label>
-                                    <label>특수<input type="checkbox" id="특수1" name="급지" value="특수1" onclick="Checkevent()" checked/></label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>본교/분교/병설</legend>
-                                    <label>전체<input type="checkbox" id="all_5" name="본교/분교/병설" value="전체" onclick="selectAll_5(this)" checked/></label>
-                                    <label>본교<input type="checkbox" id="본교" name="본교/분교/병설" value="본교" onclick="Checkevent()" checked/></label>
-                                    <label>분교<input type="checkbox" id="분교" name="본교/분교/병설" value="분교" onclick="Checkevent()" checked/></label>
-                                    <label>병설<input type="checkbox" id="병설" name="본교/분교/병설" value="병설" onclick="Checkevent()" checked/></label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>남녀공학</legend>
-                                    <label>전체<input type="checkbox" id="all_6" name="남녀공학" value="전체" onclick="selectAll_6(this)" checked/></label>
-                                    <label>남녀<input type="checkbox" id="남녀" name="남녀공학" value="남녀" onclick="Checkevent()" checked/></label>
-                                    <label>남<input type="checkbox" id="남" name="남녀공학" value="남" onclick="Checkevent()" checked/></label>
-                                    <label>여<input type="checkbox" id="여" name="남녀공학" value="여" onclick="Checkevent()" checked/></label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>개교(개원)/휴교(휴원)</legend>
-                                    <label>전체<input type="checkbox" id="all_7" name="개교(개원)/휴교(휴원)" value="전체" onclick="selectAll_7(this)" checked/></label>
-                                    <label>개교(개원)<input type="checkbox" id="개교_개원" name="개교(개원)/휴교(휴원)" value="개교_개원" onclick="Checkevent()" checked/></label>
-                                    <label>휴교(휴원)<input type="checkbox" id="휴교_휴원" name="개교(개원)/휴교(휴원)" value="휴교_휴원" onclick="Checkevent()" checked/></label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>계열구분1</legend>
-                                    <label>전체<input type="checkbox" id="all_8" name="계열구분1" value="전체" onclick="selectAll_8(this)" checked/></label>
-                                    <label>일반계<input type="checkbox" id="일반계" name="계열구분1" value="일반계" onclick="Checkevent()" checked/></label>
-                                    <label>전문계<input type="checkbox" id="전문계" name="계열구분1" value="전문계" onclick="Checkevent()" checked/></label>
-                                    <label>해당없음<input type="checkbox" id="해당없음8" name="계열구분1" value="해당없음8" onclick="Checkevent()" checked/></label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>계열구분2</legend>
-                                    <label>전체<input type="checkbox" id="all_9" name="계열구분2" value="전체" onclick="selectAll_9(this)" checked/></label>
-                                    <label>특수목적고<input type="checkbox" id="특수목적고" name="계열구분2" value="특수목적고" onclick="Checkevent()" checked/></label>
-                                    <label>마이스터고<input type="checkbox" id="마이스터고" name="계열구분2" value="마이스터고" onclick="Checkevent()" checked/></label>
-                                    <br><label>전문계학과설치고<input type="checkbox" id="전문계학과설치고" name="계열구분2" value="전문계학과설치고" onclick="Checkevent()" checked/></label>
-                                    <label>특성화고(직업)<input type="checkbox" id="특성화고_직업" name="계열구분2" value="특성화고_직업" onclick="Checkevent()" checked/></label>
-                                    <br><label>특성화고(대안)<input type="checkbox" id="특성화고_대안" name="계열구분2" value="특성화고_대안" onclick="Checkevent()" checked/></label>
-                                    <label>특성화중(대안)<input type="checkbox" id="특성화중_대안" name="계열구분2" value="특성화중_대안" onclick="Checkevent()" checked/></label>
-                                    <label>해당없음<input type="checkbox" id="해당없음9" name="계열구분2" value="해당없음9" onclick="Checkevent()" checked/></label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>도서·벽지학교</legend>
-                                    <label>전체<input type="checkbox" id="all_10" name="도서·벽지학교" value="전체" onclick="selectAll_10(this)" checked/></label>
-                                    <label>도서<input type="checkbox" id="도서" name="도서·벽지학교" value="도서" onclick="Checkevent()" checked/></label>
-                                    <label>벽지<input type="checkbox" id="벽지" name="도서·벽지학교" value="벽지" onclick="Checkevent()" checked/></label>
-                                    <label>해당없음<input type="checkbox" id="해당없음10" name="도서·벽지학교" value="해당없음10" onclick="Checkevent()" checked/></label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>전북미래학교·혁신학교</legend>
-                                    <label>전체<input type="checkbox" id="all_11" name="전북미래학교·혁신학교" value="전체" onclick="selectAll_11(this)" checked/></label>
-                                    <label>전북미래준비학교<input type="checkbox" id="전북미래준비학교" name="전북미래학교·혁신학교" value="전북미래준비학교" onclick="Checkevent()" checked/></label>
-                                    <br><label>혁신+학교<input type="checkbox" id="혁신학교1" name="전북미래학교·혁신학교" value="혁신학교1" onclick="Checkevent()" checked/></label>
-                                    <label>혁신학교<input type="checkbox" id="혁신학교2" name="전북미래학교·혁신학교" value="혁신학교2" onclick="Checkevent()" checked/></label>
-                                    <label>해당없음<input type="checkbox" id="해당없음11" name="전북미래학교·혁신학교" value="해당없음11" onclick="Checkevent()" checked/></label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>원도심학교</legend>
-                                    <label>전체<input type="checkbox" id="all_12" name="원도심학교" value="전체" onclick="selectAll_12(this)" checked/></label>
-                                    <label>공동통학구형(도시형어울림)<input type="checkbox" id="공동통학구형_도시형어울림" name="원도심학교" value="공동통학구형_도시형어울림" onclick="Checkevent()" checked/></label>
-                                    <br><label>교육돋움형<input type="checkbox" id="교육돋움형" name="원도심학교" value="교육돋움형" onclick="Checkevent()" checked/></label>
-                                    <label>학교간협력형<input type="checkbox" id="학교간협력형" name="원도심학교" value="학교간협력형" onclick="Checkevent()" checked/></label>
-                                    <br><label>학교-지역협력형<input type="checkbox" id="학교_지역협력형" name="원도심학교" value="학교_지역협력형" onclick="Checkevent()" checked/></label>
-                                    <label>해당없음<input type="checkbox" id="해당없음12" name="원도심학교" value="해당없음12" onclick="Checkevent()" checked/></label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>통합운영학교</legend>
-                                    <label>전체<input type="checkbox" id="all_13" name="통합운영학교" value="전체" onclick="selectAll_13(this)" checked/></label>
-                                    <label>초+중<input type="checkbox" id="초중" name="통합운영학교" value="초중" onclick="Checkevent()" checked/></label>
-                                    <label>초+중+고<input type="checkbox" id="초중고" name="통합운영학교" value="초중고" onclick="Checkevent()" checked/></label>
-                                    <label>중+고<input type="checkbox" id="중고" name="통합운영학교" value="중고" onclick="Checkevent()" checked/></label>
-                                    <br><label>해당없음<input type="checkbox" id="해당없음13" name="통합운영학교" value="해당없음13" onclick="Checkevent()" checked/></label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>전체학생수</legend>
-                                        <input type="number" id="전체학생수1" value="0" style="width:50px"><input type="button" value="이상" onclick="Checkevent()"><input type="number" id="전체학생수2" value="9999" style="width:50px"><input type="button" value="이하" onclick="Checkevent()">
-                                    </form>
-                                </fieldset>
-                                <fieldset>
-                                    <legend>특수학생수</legend>
-                                        <input type="number" id="특수학생수1" value="0" style="width:50px"><input type="button" value="이상" onclick="Checkevent()"><input type="number" id="특수학생수2" value="9999" style="width:50px"><input type="button" value="이하" onclick="Checkevent()">
-                                    </form>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
         <div id="main">
             <div id="map" class="inner">            
             </div>
@@ -153,90 +19,231 @@
 </html>
 
 
-<table>
-    <colgroup>
-        <col>
-    </colgroup>
-    <thead>
-        <tr style="background-color:rgb(3, 1, 92);">
-            <th width="40" rowspan="2"><font color="white">구분</font></th>
-            <th colspan="4"><font color="white">학교 수</font></th>
-            <th width="50" rowspan="2"><font color="white">학급 수</font></th>
-            <th width="50" rowspan="2"><font color="white">학생 수</font></th>
-            <!-- <th></th> -->
-            <!-- <th></th> -->
-        </tr>
-        <tr style="background-color:rgb(3, 1, 92);">
-            <!-- <th></th> -->
-            <th width="40"><font color="white">국립</font></th>
-            <th width="40"><font color="white">공립</font></th>
-            <th width="40"><font color="white">사립</font></th>
-            <th width="40"><font color="white">소계</font></th>
-        </tr>
-    </thead>
-    <tfoot>
-        <tr>
-            <td colspan="7" style="background-color: white;">*2023.4.1.교육행정자료 기준, 유치원 사립 제외</td>
-            <!-- <td></td> -->
-            <!-- <td></td> -->
-            <!-- <td></td> -->
-        </tr>
-    </tfoot>
-    <tbody>
-        <tr>
-            <th style="background-color:rgb(255, 30, 0);"><font color="white">유</font></th>
-            <td id="num1">0</td>
-            <td id="num2">369</td>
-            <td id="num3">0</td>
-            <td id="num3_1">369</td>
-            <td id="num4">674</td>
-            <td id="num5">6433</td>
-        </tr>
-        <tr>
-            <th style="background-color:rgb(0, 16, 247);"><font color="white">초</font></th>
-            <td id="num6">2</td>
-            <td id="num7">422</td>
-            <td id="num8">0</td>
-            <td id="num8_1">424</td>
-            <td id="num9">5150</td>
-            <td id="num10">87298</td>
-        </tr>
-        <tr>
-            <th style="background-color:rgb(255, 251, 0);"><font color="black">중</font></th>
-            <td id="num11">0</td>
-            <td id="num12">162</td>
-            <td id="num13">49</td>
-            <td id="num13_1">211</td>
-            <td id="num14">2146</td>
-            <td id="num15">48073</td>
-        </tr>
-        <tr>
-            <th style="background-color:rgb(10, 112, 0);"><font color="white">고</font></th>
-            <td id="num16">2</td>
-            <td id="num17">63</td>
-            <td id="num18">68</td>
-            <td id="num18_1">133</td>
-            <td id="num19">2268</td>
-            <td id="num20">48244</td>
-        </tr>
-        <tr>
-            <th style="background-color:rgb(83, 38, 0);"><font color="white">특수</font></th>
-            <td id="num21">0</td>
-            <td id="num22">6</td>
-            <td id="num23">4</td>
-            <td id="num23_1">10</td>
-            <td id="num24">216</td>
-            <td id="num25">1120</td>
-        </tr>
-        <tr style="background-color:rgba(3, 1, 92, 0.24);">
-            <th>합계</th>
-            <td id="num26">4</td>
-            <td id="num27">1022</td>
-            <td id="num28">121</td>
-            <td id="num28_1">1147</td>
-            <td id="num29">10454</td>
-            <td id="num30">191168</td>
-        </tr>
-    </tbody>
-</table>
+<div>
+    <button id="button2" onclick="openSetting2()">닫기</button>
+    <table id="table1">
+        <colgroup>
+            <col>
+        </colgroup>
+        <thead>
+            <tr style="background-color:rgb(3, 1, 92);">
+                <th width="40" rowspan="2"><font color="white">구분</font></th>
+                <th colspan="4"><font color="white">학교 수</font></th>
+                <th width="50" rowspan="2"><font color="white">학급 수</font></th>
+                <th width="50" rowspan="2"><font color="white">학생 수</font></th>
+                <!-- <th></th> -->
+                <!-- <th></th> -->
+            </tr>
+            <tr style="background-color:rgb(3, 1, 92);">
+                <!-- <th></th> -->
+                <th width="40"><font color="white">국립</font></th>
+                <th width="40"><font color="white">공립</font></th>
+                <th width="40"><font color="white">사립</font></th>
+                <th width="40"><font color="white">소계</font></th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="7" style="background-color: white;">*2023.4.1.교육행정자료 기준, 유치원 사립 제외</td>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th style="background-color:rgb(255, 30, 0);"><font color="white">유</font></th>
+                <td id="num1">0</td>
+                <td id="num2">369</td>
+                <td id="num3">0</td>
+                <td id="num3_1">369</td>
+                <td id="num4">674</td>
+                <td id="num5">6433</td>
+            </tr>
+            <tr>
+                <th style="background-color:rgb(0, 16, 247);"><font color="white">초</font></th>
+                <td id="num6">2</td>
+                <td id="num7">422</td>
+                <td id="num8">0</td>
+                <td id="num8_1">424</td>
+                <td id="num9">5150</td>
+                <td id="num10">87298</td>
+            </tr>
+            <tr>
+                <th style="background-color:rgb(255, 251, 0);"><font color="black">중</font></th>
+                <td id="num11">0</td>
+                <td id="num12">162</td>
+                <td id="num13">49</td>
+                <td id="num13_1">211</td>
+                <td id="num14">2146</td>
+                <td id="num15">48073</td>
+            </tr>
+            <tr>
+                <th style="background-color:rgb(10, 112, 0);"><font color="white">고</font></th>
+                <td id="num16">2</td>
+                <td id="num17">63</td>
+                <td id="num18">68</td>
+                <td id="num18_1">133</td>
+                <td id="num19">2268</td>
+                <td id="num20">48244</td>
+            </tr>
+            <tr>
+                <th style="background-color:rgb(83, 38, 0);"><font color="white">특수</font></th>
+                <td id="num21">0</td>
+                <td id="num22">6</td>
+                <td id="num23">4</td>
+                <td id="num23_1">10</td>
+                <td id="num24">216</td>
+                <td id="num25">1120</td>
+            </tr>
+            <tr style="background-color:rgba(3, 1, 92, 0.24);">
+                <th>합계</th>
+                <td id="num26">4</td>
+                <td id="num27">1022</td>
+                <td id="num28">121</td>
+                <td id="num28_1">1147</td>
+                <td id="num29">10454</td>
+                <td id="num30">191168</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
+
+<div id="side1">
+    <button id="button1" onclick="openSetting1()">설정 열기</button>
+    </div><div id="side">
+        <section id="category">
+            <div class="inner">
+                <div class="category-container">
+                    <div class="category-list">
+                        <form>
+                            <fieldset>
+                                <legend>학교급</legend>
+                                <label>전체<input type="checkbox" id="all_1" name="학교급" value="전체" onclick="selectAll_1(this)" checked/></label>
+                                <label>유<input type="checkbox" id="유" name="학교급" value="유" onclick="Checkevent()" checked/></label>
+                                <label>초<input type="checkbox" id="초" name="학교급" value="초" onclick="Checkevent()" checked/></label>
+                                <label>중<input type="checkbox" id="중" name="학교급" value="중" onclick="Checkevent()" checked/></label>
+                                <label>고<input type="checkbox" id="고" name="학교급" value="고" onclick="Checkevent()" checked/></label>
+                                <label>특수<input type="checkbox" id="특수" name="학교급" value="특수" onclick="Checkevent()" checked/></label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>설립</legend>
+                                <label>전체<input type="checkbox" id="all_2" name="설립" value="전체" onclick="selectAll_2(this)" checked/></label>
+                                <label>국립<input type="checkbox" id="국립" name="설립" value="국립" onclick="Checkevent()" checked/></label>
+                                <label>공립<input type="checkbox" id="공립" name="설립" value="공립" onclick="Checkevent()" checked/></label>
+                                <label>사립<input type="checkbox" id="사립" name="설립" value="사립" onclick="Checkevent()" checked/></label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>지역</legend>
+                                <label>전체<input type="checkbox" id="all_3" name="지역" value="전체" onclick="selectAll_3(this)" checked/></label>
+                                <label>전주<input type="checkbox" id="전주" name="지역" value="전주" onclick="Checkevent()" checked/></label>
+                                <label>군산<input type="checkbox" id="군산" name="지역" value="군산" onclick="Checkevent()" checked/></label>
+                                <label>익산<input type="checkbox" id="익산" name="지역" value="익산" onclick="Checkevent()" checked/></label>
+                                <label>정읍<input type="checkbox" id="정읍" name="지역" value="정읍" onclick="Checkevent()" checked/></label>
+                                <br><label>남원<input type="checkbox" id="남원" name="지역" value="남원" onclick="Checkevent()" checked/></label>
+                                <label>김제<input type="checkbox" id="김제" name="지역" value="김제" onclick="Checkevent()" checked/></label>
+                                <label>완주<input type="checkbox" id="완주" name="지역" value="완주" onclick="Checkevent()" checked/></label>
+                                <label>진안<input type="checkbox" id="진안" name="지역" value="진안" onclick="Checkevent()" checked/></label>
+                                <label>무주<input type="checkbox" id="무주" name="지역" value="무주" onclick="Checkevent()" checked/></label>
+                                <br><label>장수<input type="checkbox" id="장수" name="지역" value="장수" onclick="Checkevent()" checked/></label>
+                                <label>임실<input type="checkbox" id="임실" name="지역" value="임실" onclick="Checkevent()" checked/></label>
+                                <label>순창<input type="checkbox" id="순창" name="지역" value="순창" onclick="Checkevent()" checked/></label>
+                                <label>고창<input type="checkbox" id="고창" name="지역" value="고창" onclick="Checkevent()" checked/></label>
+                                <label>부안<input type="checkbox" id="부안" name="지역" value="부안" onclick="Checkevent()" checked/></label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>급지</legend>
+                                <label>전체<input type="checkbox" id="all_4" name="급지" value="전체" onclick="selectAll_4(this)" checked/></label>
+                                <label>시<input type="checkbox" id="시" name="급지" value="시" onclick="Checkevent()" checked/></label>
+                                <label>읍<input type="checkbox" id="읍" name="급지" value="읍" onclick="Checkevent()" checked/></label>
+                                <label>면<input type="checkbox" id="면" name="급지" value="면" onclick="Checkevent()" checked/></label>
+                                <label>특수<input type="checkbox" id="특수1" name="급지" value="특수1" onclick="Checkevent()" checked/></label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>본교/분교/병설</legend>
+                                <label>전체<input type="checkbox" id="all_5" name="본교/분교/병설" value="전체" onclick="selectAll_5(this)" checked/></label>
+                                <label>본교<input type="checkbox" id="본교" name="본교/분교/병설" value="본교" onclick="Checkevent()" checked/></label>
+                                <label>분교<input type="checkbox" id="분교" name="본교/분교/병설" value="분교" onclick="Checkevent()" checked/></label>
+                                <label>병설<input type="checkbox" id="병설" name="본교/분교/병설" value="병설" onclick="Checkevent()" checked/></label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>남녀공학</legend>
+                                <label>전체<input type="checkbox" id="all_6" name="남녀공학" value="전체" onclick="selectAll_6(this)" checked/></label>
+                                <label>남녀<input type="checkbox" id="남녀" name="남녀공학" value="남녀" onclick="Checkevent()" checked/></label>
+                                <label>남<input type="checkbox" id="남" name="남녀공학" value="남" onclick="Checkevent()" checked/></label>
+                                <label>여<input type="checkbox" id="여" name="남녀공학" value="여" onclick="Checkevent()" checked/></label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>개교(개원)/휴교(휴원)</legend>
+                                <label>전체<input type="checkbox" id="all_7" name="개교(개원)/휴교(휴원)" value="전체" onclick="selectAll_7(this)" checked/></label>
+                                <label>개교(개원)<input type="checkbox" id="개교_개원" name="개교(개원)/휴교(휴원)" value="개교_개원" onclick="Checkevent()" checked/></label>
+                                <label>휴교(휴원)<input type="checkbox" id="휴교_휴원" name="개교(개원)/휴교(휴원)" value="휴교_휴원" onclick="Checkevent()" checked/></label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>계열구분1</legend>
+                                <label>전체<input type="checkbox" id="all_8" name="계열구분1" value="전체" onclick="selectAll_8(this)" checked/></label>
+                                <label>일반계<input type="checkbox" id="일반계" name="계열구분1" value="일반계" onclick="Checkevent()" checked/></label>
+                                <label>전문계<input type="checkbox" id="전문계" name="계열구분1" value="전문계" onclick="Checkevent()" checked/></label>
+                                <label>해당없음<input type="checkbox" id="해당없음8" name="계열구분1" value="해당없음8" onclick="Checkevent()" checked/></label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>계열구분2</legend>
+                                <label>전체<input type="checkbox" id="all_9" name="계열구분2" value="전체" onclick="selectAll_9(this)" checked/></label>
+                                <label>특수목적고<input type="checkbox" id="특수목적고" name="계열구분2" value="특수목적고" onclick="Checkevent()" checked/></label>
+                                <label>마이스터고<input type="checkbox" id="마이스터고" name="계열구분2" value="마이스터고" onclick="Checkevent()" checked/></label>
+                                <br><label>전문계학과설치고<input type="checkbox" id="전문계학과설치고" name="계열구분2" value="전문계학과설치고" onclick="Checkevent()" checked/></label>
+                                <label>특성화고(직업)<input type="checkbox" id="특성화고_직업" name="계열구분2" value="특성화고_직업" onclick="Checkevent()" checked/></label>
+                                <br><label>특성화고(대안)<input type="checkbox" id="특성화고_대안" name="계열구분2" value="특성화고_대안" onclick="Checkevent()" checked/></label>
+                                <label>특성화중(대안)<input type="checkbox" id="특성화중_대안" name="계열구분2" value="특성화중_대안" onclick="Checkevent()" checked/></label>
+                                <label>해당없음<input type="checkbox" id="해당없음9" name="계열구분2" value="해당없음9" onclick="Checkevent()" checked/></label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>도서·벽지학교</legend>
+                                <label>전체<input type="checkbox" id="all_10" name="도서·벽지학교" value="전체" onclick="selectAll_10(this)" checked/></label>
+                                <label>도서<input type="checkbox" id="도서" name="도서·벽지학교" value="도서" onclick="Checkevent()" checked/></label>
+                                <label>벽지<input type="checkbox" id="벽지" name="도서·벽지학교" value="벽지" onclick="Checkevent()" checked/></label>
+                                <label>해당없음<input type="checkbox" id="해당없음10" name="도서·벽지학교" value="해당없음10" onclick="Checkevent()" checked/></label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>전북미래학교·혁신학교</legend>
+                                <label>전체<input type="checkbox" id="all_11" name="전북미래학교·혁신학교" value="전체" onclick="selectAll_11(this)" checked/></label>
+                                <label>전북미래준비학교<input type="checkbox" id="전북미래준비학교" name="전북미래학교·혁신학교" value="전북미래준비학교" onclick="Checkevent()" checked/></label>
+                                <br><label>혁신+학교<input type="checkbox" id="혁신학교1" name="전북미래학교·혁신학교" value="혁신학교1" onclick="Checkevent()" checked/></label>
+                                <label>혁신학교<input type="checkbox" id="혁신학교2" name="전북미래학교·혁신학교" value="혁신학교2" onclick="Checkevent()" checked/></label>
+                                <label>해당없음<input type="checkbox" id="해당없음11" name="전북미래학교·혁신학교" value="해당없음11" onclick="Checkevent()" checked/></label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>원도심학교</legend>
+                                <label>전체<input type="checkbox" id="all_12" name="원도심학교" value="전체" onclick="selectAll_12(this)" checked/></label>
+                                <label>공동통학구형(도시형어울림)<input type="checkbox" id="공동통학구형_도시형어울림" name="원도심학교" value="공동통학구형_도시형어울림" onclick="Checkevent()" checked/></label>
+                                <br><label>교육돋움형<input type="checkbox" id="교육돋움형" name="원도심학교" value="교육돋움형" onclick="Checkevent()" checked/></label>
+                                <label>학교간협력형<input type="checkbox" id="학교간협력형" name="원도심학교" value="학교간협력형" onclick="Checkevent()" checked/></label>
+                                <br><label>학교-지역협력형<input type="checkbox" id="학교_지역협력형" name="원도심학교" value="학교_지역협력형" onclick="Checkevent()" checked/></label>
+                                <label>해당없음<input type="checkbox" id="해당없음12" name="원도심학교" value="해당없음12" onclick="Checkevent()" checked/></label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>통합운영학교</legend>
+                                <label>전체<input type="checkbox" id="all_13" name="통합운영학교" value="전체" onclick="selectAll_13(this)" checked/></label>
+                                <label>초+중<input type="checkbox" id="초중" name="통합운영학교" value="초중" onclick="Checkevent()" checked/></label>
+                                <label>초+중+고<input type="checkbox" id="초중고" name="통합운영학교" value="초중고" onclick="Checkevent()" checked/></label>
+                                <label>중+고<input type="checkbox" id="중고" name="통합운영학교" value="중고" onclick="Checkevent()" checked/></label>
+                                <br><label>해당없음<input type="checkbox" id="해당없음13" name="통합운영학교" value="해당없음13" onclick="Checkevent()" checked/></label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>전체학생수</legend>
+                                    <input type="number" id="전체학생수1" value="0" style="width:50px"><input type="button" value="이상" onclick="Checkevent()"><input type="number" id="전체학생수2" value="9999" style="width:50px"><input type="button" value="이하" onclick="Checkevent()">
+                                </form>
+                            </fieldset>
+                            <fieldset>
+                                <legend>특수학생수</legend>
+                                    <input type="number" id="특수학생수1" value="0" style="width:50px"><input type="button" value="이상" onclick="Checkevent()"><input type="number" id="특수학생수2" value="9999" style="width:50px"><input type="button" value="이하" onclick="Checkevent()">
+                                </form>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

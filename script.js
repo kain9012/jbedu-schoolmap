@@ -1,6 +1,6 @@
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
     mapOption = { 
-        center: new kakao.maps.LatLng(35.755203, 127.009166), // 지도의 중심좌표
+        center: new kakao.maps.LatLng(35.75,126.74), // 지도의 중심좌표
         level: 10 // 지도의 확대 레벨
     };
 
@@ -1265,6 +1265,30 @@ function makeOutListener(infowindow) {
 }
 
 
+function openSetting1(){
+  if(document.getElementById('side').style.display==='block'){
+      document.getElementById('side').style.display='none';
+      document.getElementById('button1').style.left='9px';
+      document.getElementById('button1').innerText='설정 열기';
+  }else{
+      document.getElementById('side').style.display='block';
+      document.getElementById('button1').style.left='300px';
+      document.getElementById('button1').innerText='닫기';
+  }
+}
+
+function openSetting2(){
+  if(document.getElementById('table1').style.display==='none'){
+      document.getElementById('table1').style.display='block';
+      document.getElementById('button2').style.right='340px';
+      document.getElementById('button2').innerText='닫기';      
+  }else{
+
+      document.getElementById('table1').style.display='none';
+      document.getElementById('button2').style.right='9px';
+      document.getElementById('button2').innerText='합계 열기';
+  }
+}
 
 
 
